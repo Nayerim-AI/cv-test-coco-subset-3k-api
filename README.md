@@ -1,13 +1,13 @@
 
 ---
 
-# 🚀 YOLOv8 Object Detection – COCO Subset 3K
+# YOLOv8 Object Detection – COCO Subset 3K
 
 End-to-end Object Detection system menggunakan **YOLOv8n** yang di-fine-tune pada COCO subset (~3.000 images, 5 classes) dan dikemas sebagai REST API menggunakan FastAPI + Docker.
 
 ---
 
-# 📊 Model Overview
+#  Model Overview
 
 **Architecture**: YOLOv8n (Nano)
 **Dataset**: COCO Subset (~3.000 images)
@@ -21,7 +21,7 @@ End-to-end Object Detection system menggunakan **YOLOv8n** yang di-fine-tune pad
 
 ---
 
-## ⚙️ Training Configuration
+## Training Configuration
 
 * Epochs: 50
 * Batch Size: 16
@@ -34,7 +34,7 @@ Model dilatih menggunakan pretrained YOLOv8n weights dengan fine-tuning pada sub
 
 ---
 
-# 📈 Model Performance
+#  Model Performance
 
 ## Training Metrics
 
@@ -61,7 +61,7 @@ Model dilatih menggunakan pretrained YOLOv8n weights dengan fine-tuning pada sub
 
 ---
 
-# 🔎 Sample Inference
+#  Sample Inference
 
 <p align="center">
   <img src="yolov8-coco-subset-3k/yolov8_coco_subset_30005/val_batch0_pred.jpg" width="30%">
@@ -71,7 +71,7 @@ Model dilatih menggunakan pretrained YOLOv8n weights dengan fine-tuning pada sub
 
 ---
 
-# 🐳 Docker Deployment
+# Docker Deployment
 
 Project menyediakan dua mode deployment:
 
@@ -80,7 +80,7 @@ Project menyediakan dua mode deployment:
 
 ---
 
-## 🔹 Build GPU Version
+##  Build GPU Version
 
 ```bash
 docker build -f Dockerfile.gpu -t yolov8-api:gpu .
@@ -102,7 +102,7 @@ docker run --gpus all -p 8000:8000 --rm yolov8-api:gpu
 
 ---
 
-## 🔹 Build CPU Version
+##  Build CPU Version
 
 ```bash
 docker build -f Dockerfile.cpu -t yolov8-api:cpu .
@@ -116,7 +116,7 @@ docker run -p 8000:8000 --rm yolov8-api:cpu
 
 ---
 
-# 🌐 REST API
+#  REST API
 
 ### Health Check
 
@@ -160,7 +160,7 @@ Example Response:
 
 ---
 
-# 📁 Project Structure
+#  Project Structure
 
 ```
 .
